@@ -9,7 +9,6 @@ import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,9 +30,11 @@ public class MainActivity extends AppCompatActivity {
                 myWebView.getSettings().setLoadWithOverviewMode(true);
             } else {
                 loadErrorPage("Keine Internetverbindung");
+                setContentView(R.layout.activity_error_logo);
             }
         } catch (Exception e) {
             loadErrorPage("Ups, da ist etwas schief gelaufen...");
+            setContentView(R.layout.activity_error_logo);
         }
     }
 

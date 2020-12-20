@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:contentDescription="@string/errorLogo"
-            app:srcCompat="@drawable/logo"
+            app:srcCompat="@drawable/splash"
             tools:ignore="MissingConstraints" />
     </LinearLayout>
 
